@@ -1,0 +1,22 @@
+[Unit]
+Description=Murlicha's distributed currency daemon
+After=network.target
+
+[Service]
+User=murlichacore
+Group=murlichacore
+
+Type=forking
+PIDFile=/var/lib/murlichad/murlichad.pid
+ExecStart=/usr/bin/murlichad -daemon -pid=/var/lib/murlichad/murlichad.pid \
+-conf=/etc/murlichacore/murlicha.conf -datadir=/var/lib/murlichad -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

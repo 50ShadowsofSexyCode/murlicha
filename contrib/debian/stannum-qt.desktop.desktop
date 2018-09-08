@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Murlicha
+Comment=Murlicha P2P Cryptocurrency
+Exec=murlicha-qt %u
+Terminal=false
+Type=Application
+Icon=murlicha128
+MimeType=x-scheme-handler/murlicha;
+Categories=Office;Finance;
+Name[en_US]=murlicha-qt.desktop

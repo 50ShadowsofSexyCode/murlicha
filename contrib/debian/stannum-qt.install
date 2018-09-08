@@ -1,0 +1,6 @@
+usr/local/bin/murlicha-qt usr/bin
+share/pixmaps/murlicha32.xpm usr/share/pixmaps
+share/pixmaps/murlicha16.xpm usr/share/pixmaps
+share/pixmaps/murlicha128.png usr/share/pixmaps
+debian/murlicha-qt.desktop usr/share/applications
+debian/murlicha-qt.protocol usr/share/kde4/services/
